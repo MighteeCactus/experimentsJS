@@ -1,0 +1,6 @@
+# ignore PhpStorm project directory
+.idea
+
+node_modules
+
+libs/vendors
