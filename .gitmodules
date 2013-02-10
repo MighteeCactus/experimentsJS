@@ -1,4 +1,4 @@
-[submodule "libs/requirejs"]h =
+[submodule "libs/requirejs"]
 	path = libs/vendors/requirejs
 	url = https://github.com/jrburke/requirejs.git
 [submodule "libs/sim.js"]
