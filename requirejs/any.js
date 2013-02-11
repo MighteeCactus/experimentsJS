@@ -1,7 +1,7 @@
 requirejs.config({
     baseUrl: "requirejs",
     paths: {
-        jquery: "../libs/jquery-1.8.3.min"
+        jquery: "../vendors/jquery/release"
     }
 });
 

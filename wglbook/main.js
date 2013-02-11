@@ -1,7 +1,7 @@
 requirejs.config({
     paths: {
-        three: "../libs/three.js/build/three",
-        jquery: "../libs/jquery-1.8.3.min",
+        three: "../vendors/three.js/build/three",
+        jquery: "../vendors/jquery/release",
         requestAnimationFrame: "../libs/RequestAnimationFrame"
     },
     shim: {
