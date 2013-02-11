@@ -3,6 +3,7 @@ define(["three", "requestAnimationFrame"], function(THREE) {
         scene = null,
         camera = null,
         cube = null,
+        cube2 = null,
         animating = false;
 
     var container = document.getElementById("container");
@@ -17,7 +18,7 @@ define(["three", "requestAnimationFrame"], function(THREE) {
     camera.position.set( 0, 0, 3 );
 
     var light = new THREE.DirectionalLight(0xffffff, 1.5);
-    light.position.set( 0, 0, 1 );
+    light.position.set( 0, 0, 2 );
     scene.add( light );
 
     var mapUrl = "images/molumen_small_funny_angry_monster.jpg"
@@ -28,11 +29,18 @@ define(["three", "requestAnimationFrame"], function(THREE) {
     var geometry = new THREE.CubeGeometry(1, 1, 1);
 
     cube = new THREE.Mesh(geometry, material);
+    cube2 = new THREE.Mesh(geometry, material);
 
     cube.rotation.x = Math.PI / 5;
     cube.rotation.y = Math.PI / 5;
+    cube2.rotation.x = Math.PI / 5;
+    cube2.rotation.y = Math.PI / 5;
+
+    cube.position.x = -1;
+    cube2.position.x = 1;
 
     scene.add( cube );
+    scene.add( cube2 );
 
     addMouseHandler();
 
@@ -43,6 +51,8 @@ define(["three", "requestAnimationFrame"], function(THREE) {
 
         if (animating) {
             cube.rotation.y -= 0.01;
+            cube.rotation.z -= Math.PI / 200;
+            cube2.rotation.y += 0.01;
         }
 
         requestAnimationFrame(run);
@@ -55,6 +65,7 @@ define(["three", "requestAnimationFrame"], function(THREE) {
     }
 
     function onMouseUp(event) {
+        console.log("test");
         event.preventDefault();
 
         animating = !animating;
