@@ -1,20 +1,20 @@
-[submodule "libs/requirejs"]
-	path = libs/vendors/requirejs
+[submodule "vendors/requirejs"]
+	path = vendors/requirejs
 	url = https://github.com/jrburke/requirejs.git
-[submodule "libs/sim.js"]
-	path = libs/vendors/sim.js
+[submodule "vendors/sim.js"]
+	path = vendors/sim.js
 	url = https://github.com/tparisi/Sim.js.git
-[submodule "libs/three.js"]
-	path = libs/vendors/three.js
+[submodule "vendors/three.js"]
+	path = vendors/three.js
 	url = https://github.com/mrdoob/three.js.git
-[submodule "libs/jquery"]
-	path = libs/vendors/jquery
+[submodule "vendors/jquery"]
+	path = vendors/jquery
 	url = https://github.com/jquery/jquery.git
-[submodule "libs/underscore"]
-	path = libs/vendors/underscore
+[submodule "vendors/underscore"]
+	path = vendors/underscore
 	url = https://github.com/documentcloud/underscore.git
-[submodule "libs/backbone"]
-	path = libs/vendors/backbone
+[submodule "vendors/backbone"]
+	path = vendors/backbone
 	url = https://github.com/documentcloud/backbone.git
 [submodule "wglbook/chapters"]
 	path = wglbook/chapters
