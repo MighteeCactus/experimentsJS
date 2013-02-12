@@ -23,7 +23,7 @@ define( ["three", "sim"], function() {
     Earth.prototype.init = function (param) {
         var earthmap = "images/earth_surface_2048.jpg";
         var geometry = new THREE.SphereGeometry(1, 32, 32);
-        var texture = new THREE.ImageUtil(earthmap);
+        var texture = new THREE.ImageUtils.loadTexture(earthmap);
         var material = new THREE.MeshPhongMaterial({ map: texture });
         var mesh = new THREE.Mesh( geometry, material );
 

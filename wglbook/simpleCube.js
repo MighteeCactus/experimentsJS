@@ -65,7 +65,6 @@ define(["three", "requestAnimationFrame"], function(THREE) {
     }
 
     function onMouseUp(event) {
-        console.log("test");
         event.preventDefault();
 
         animating = !animating;

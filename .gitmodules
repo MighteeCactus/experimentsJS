@@ -19,3 +19,6 @@
 [submodule "wglbook/chapters"]
 	path = wglbook/chapters
 	url = https://github.com/tparisi/WebGLBook.git
+[submodule "vendors/jquery-mousewheel"]
+	path = vendors/jquery-mousewheel
+	url = https://github.com/brandonaaron/jquery-mousewheel.git
