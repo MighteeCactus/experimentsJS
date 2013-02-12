@@ -19,3 +19,6 @@
 [submodule "vendors/jquery-mousewheel"]
 	path = vendors/jquery-mousewheel
 	url = https://github.com/brandonaaron/jquery-mousewheel.git
+[submodule "vendors/sim.js"]
+	path = vendors/sim.js
+	url = https://github.com/MighteeCactus/Sim.js.git
