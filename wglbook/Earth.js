@@ -12,6 +12,10 @@ define( ["three", "sim"], function() {
         var earth = new Earth();
         earth.init();
         this.addObject(earth);
+
+        var sun = new Sun();
+        sun.init();
+        this.addObject( sun );
     }
 
     var Earth = function() {
@@ -38,6 +42,20 @@ define( ["three", "sim"], function() {
 
     Earth.ROTATION_Y = 0.0025;
     Earth.TILT = 0.41;
+
+    var Sun = function() {
+        Sim.Object.call(this);
+    }
+
+    Sun.prototype = new Sim.Object();
+
+    Sun.prototype.init = function() {
+        var light = new THREE.PointLight( 0xffffff, 2, 100 );
+        light.position.set( -10, 0, 20 );
+
+        this.setObject3D(light);
+    }
+
 
     return EarthApp;
 
