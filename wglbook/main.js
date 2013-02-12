@@ -21,6 +21,7 @@ requirejs.config({
 requirejs(["earth", "jquery"], function(EarthApp, $) {
     var container = $("#container").get(0);
     var canvas = $("#myCanvas").get(0);
-    var earthApp = new EarthApp();
-    earthApp.init({ container: container, canvas: canvas });
+    var app = new EarthApp();
+    app.init({ container: container });
+    app.run();
 });
