@@ -22,3 +22,6 @@
 [submodule "vendors/sim.js"]
 	path = vendors/sim.js
 	url = https://github.com/MighteeCactus/Sim.js.git
+[submodule "vendors/canvasquery"]
+	path = vendors/canvasquery
+	url = https://github.com/rezoner/CanvasQuery.git
