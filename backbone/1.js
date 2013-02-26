@@ -38,8 +38,6 @@ define(["backbone", "underscore", "jquery"], function(Backbone, _, $) {
 
         unrender: function() {
             $(this.el).remove();
-
-            return this;
         },
 
         swap: function() {
