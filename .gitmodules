@@ -28,3 +28,6 @@
 [submodule "vendors/bootstrap"]
 	path = vendors/bootstrap
 	url = https://github.com/twitter/bootstrap.git
+[submodule "vendors/modernizr"]
+	path = vendors/modernizr
+	url = https://github.com/Modernizr/Modernizr.git
